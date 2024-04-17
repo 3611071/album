@@ -1,4 +1,4 @@
-import img1 from './../../img/1.avif'
+import img1 from './../../img/2.avif'
 const Main = () => {
     return (
         <header className="App-header">
