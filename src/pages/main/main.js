@@ -1,9 +1,17 @@
-import img1 from './../../img/1.avif'
-const Main = () => {
+import { NavLink } from "react-router-dom"
+const Main = (props) => {
     return (
         <header className="App-header">
-            <img src={img1} className="App-logo" alt="logo" />
-
+        {props.data.map(photos => {
+            return(
+                <>
+                <div>{photos.title}</div>
+                <NavLink to={photos.link}>
+                <img src={photos.img} alt={photos.alt} className='photos'/>
+                </NavLink>
+                </>
+            )
+        })}
         </header>
     )
 }
