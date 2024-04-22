@@ -26,3 +26,10 @@
 .photos{
   width: 400px;
 }
+
+.albs{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
