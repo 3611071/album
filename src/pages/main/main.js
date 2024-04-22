@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom"
-const Main = (props) => {
+const Main = () => {
     return (
         <header className="App-header">
         {props.data.map(photos => {
